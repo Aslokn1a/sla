@@ -27,6 +27,7 @@ margin: 0px;
     border-radius: 20px;
     border-color: rgb(0, 0, 0);
     border-width: 2px;
+    animation-fill-mode: forwards;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -37,8 +38,17 @@ margin: 0px;
     padding: 10px;
     margin: 50px;
     font-size: 25px;
-
+    animation: cadastro_fadein 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
+@keyframes cadastro_fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
 .logo
 {
 animation: backInDown 1s;
@@ -60,7 +70,7 @@ animation: logo 1s;
 {
     animation: titulo_cor 2s;
     animation-delay: 1s;
-    color: rgb(98, 131, 196);
+    color: rgb(0, 0, 0);
     animation-fill-mode: forwards;
     font-size: 45px;
     font-family: 'lovelo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,10 +80,11 @@ animation: logo 1s;
     align-content: center;
     position:absolute ;
     top: 190px;
+    opacity: 0;
 }
     @keyframes titulo_cor {
-        0% { color: rgb(98, 131, 196) }
-        100% { color: black; }
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
 
